@@ -10,9 +10,9 @@
 //use the built-in array method .map
   
   //Code here
-
-
-
+function dragonMapper(array){
+  return array.map(element => element += '...here be dragons')
+}
 //////////////////PROBLEM 2////////////////////
 
 //Write a function called cookieLoversOnly that takes 
@@ -21,7 +21,9 @@
 //cookieLoversOnly should return the filtered array.
   
   //Code here
-
+function cookieLoversOnly(array){
+  return array.filter(element => element['favoriteCookie'])
+}
 
 //////////////////PROBLEM 3////////////////////
 
@@ -35,7 +37,9 @@
 
 
   //Code here
-
+function changeValue(array, cb){
+      array.forEach(element => cb(element))
+}
 
 
 //////////////////PROBLEM 4////////////////////
@@ -47,7 +51,9 @@
 //Return the product.
   
   //Code here
-
+function findProduct(array){
+  return array.reduce((acc, curr) => acc * curr)
+}
 
 //////////////////PROBLEM 5////////////////////
 
@@ -75,3 +81,6 @@
 //apart, reversing it, and putting it back together again.
 
   //Code here
+function reverseMe(string){
+  return string.split("").reverse().join("")
+}
